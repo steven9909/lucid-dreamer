@@ -4,7 +4,7 @@ Source code will not be uploaded as I am plannning on uploading this app to the 
 
 Below is the screen recording of the application running on the simulator. Note that due to the limit of the simulator, some of the features that are working on a real device does not work on the simulator (such as WatchSession's tranferFile() method to listen to audio recordings on the watch app, settings sync between IOS and watch app, etc...) Also the below appearances and flow is prelimiary and may be changed. 
 
-![](recording.gif)
+![](screenrecording.gif)
 
 The sleep detection algorithm uses ZCM to detect whether user is in light sleep or deep sleep from accelerometer data. This concept is inspired from Actigraphy and also from this paper https://academic.oup.com/annweh/article/64/4/350/5735350
 
