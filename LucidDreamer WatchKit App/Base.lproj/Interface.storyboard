@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="18122" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="18022"/>
+    </dependencies>
+    <scenes>
+        <!--WBTBNoteController-->
+        <scene sceneID="zqj-mD-IRD">
+            <objects>
+                <controller identifier="WBTBNoteController" id="xSQ-Mf-wTN" customClass="WBTBNoteController" customModule="LucidDreamer_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" numberOfLines="0" id="5SA-jl-LW6"/>
+                    </items>
+                    <connections>
+                        <outlet property="textLabel" destination="5SA-jl-LW6" id="T6q-hb-Vp2"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="576" y="-4"/>
+        </scene>
+        <!--Watch Main Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="WatchMainController" customModule="LucidDreamer_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="WBTB Start" id="sDJ-zy-1oa">
+                            <connections>
+                                <action selector="startButtonPress" destination="AgC-eL-Hgc" id="Qu8-BG-9lI"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Audio Journals" id="vEE-pn-Abn">
+                            <connections>
+                                <segue destination="6PG-iO-9ji" kind="push" id="fUX-QI-WBo"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Settings" id="haY-Rx-7oj">
+                            <connections>
+                                <segue destination="ZLn-XL-AnJ" kind="push" id="biF-5S-yy1"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="startButton" destination="sDJ-zy-1oa" id="iLb-ad-b7m"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="35" y="641"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="LucidDreamer_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="170" y="1107"/>
+        </scene>
+        <!--Audio Journal List Main Controller-->
+        <scene sceneID="vpi-pg-qoH">
+            <objects>
+                <controller id="6PG-iO-9ji" customClass="AudioJournalListMainController" customModule="LucidDreamer_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="acY-JW-0ye">
+                            <items>
+                                <tableRow identifier="row" id="LJ2-4d-U4R" customClass="JournalListRowController" customModule="LucidDreamer_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="pe7-B0-d1j">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="Fcf-SI-eMW">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="label" destination="Fcf-SI-eMW" id="RZI-ca-uJl"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="interfaceTable" destination="acY-JW-0ye" id="8ok-LW-9AJ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="576" y="345"/>
+        </scene>
+        <!--Settings Main Controller-->
+        <scene sceneID="gwL-mg-FYK">
+            <objects>
+                <controller id="ZLn-XL-AnJ" customClass="SettingsMainController" customModule="LucidDreamer_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="WBTB Wake Up In" id="NeQ-NE-Gis"/>
+                        <picker width="1" height="100" alignment="left" id="NFj-NU-aT6"/>
+                        <switch width="1" height="36" alignment="left" value="YES" title="Notification" id="K7N-vm-7O1">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                            <connections>
+                                <action selector="notificationValueChanged:" destination="ZLn-XL-AnJ" id="pcs-fS-f50"/>
+                            </connections>
+                        </switch>
+                    </items>
+                    <connections>
+                        <outlet property="notificationSwitch" destination="K7N-vm-7O1" id="clb-3w-xoo"/>
+                        <outlet property="picker" destination="NFj-NU-aT6" id="XUr-sK-Qz9"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="576" y="767.5"/>
+        </scene>
+        <!--AudioJournalPlayer-->
+        <scene sceneID="qot-3k-Zqr">
+            <objects>
+                <controller identifier="AudioJournalPlayer" title="AudioJournalPlayer" id="g8r-2X-9Jb" customClass="AudioJournalPlayerMainController" customModule="LucidDreamer_WatchKit_Extension">
+                    <items>
+                        <nowPlayingView alignment="left" id="I1b-ej-0Vb"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="962" y="345"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="LucidDreamer_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="-101" y="1107"/>
+        </scene>
+    </scenes>
+</document>

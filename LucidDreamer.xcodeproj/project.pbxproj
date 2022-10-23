@@ -1,0 +1,890 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04319BB6263F359B0007FADA /* AudioJournalsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04319BB5263F359B0007FADA /* AudioJournalsLoader.swift */; };
+		04319BB8263F4D6B0007FADA /* TextJournal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04319BB7263F4D6B0007FADA /* TextJournal.swift */; };
+		04319BBA263F4D7F0007FADA /* TextJournalsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04319BB9263F4D7F0007FADA /* TextJournalsLoader.swift */; };
+		04319BBC263F60DC0007FADA /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04319BBB263F60DC0007FADA /* Journal.swift */; };
+		04319BBE263F65CE0007FADA /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04319BBD263F65CE0007FADA /* AudioPlayer.swift */; };
+		04319BC0263F66440007FADA /* AudioPlayerObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04319BBF263F66440007FADA /* AudioPlayerObserver.swift */; };
+		04319BC2263F856A0007FADA /* AudioJournalPlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04319BC1263F856A0007FADA /* AudioJournalPlayController.swift */; };
+		04319BC626408E6D0007FADA /* JournalsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04319BC526408E6D0007FADA /* JournalsLoader.swift */; };
+		04319BC82640C9890007FADA /* TextJournalRecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04319BC72640C9890007FADA /* TextJournalRecordController.swift */; };
+		04319BCA26410E1A0007FADA /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04319BC926410E1A0007FADA /* SettingsController.swift */; };
+		04788E18264E6A95000EA8C7 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04788E17264E6A95000EA8C7 /* NotificationTableViewCell.swift */; };
+		04788E1B264E6C68000EA8C7 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04788E19264E6C68000EA8C7 /* Model.xcdatamodeld */; };
+		04788E1F264E72C0000EA8C7 /* UserNotificationObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04788E1E264E72C0000EA8C7 /* UserNotificationObject.swift */; };
+		04788E21264F8D4A000EA8C7 /* NotificationEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04788E20264F8D4A000EA8C7 /* NotificationEditController.swift */; };
+		04788E23264F9F3A000EA8C7 /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04788E22264F9F3A000EA8C7 /* ToggleButton.swift */; };
+		04788E282650B698000EA8C7 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04788E262650B698000EA8C7 /* NotificationCell.swift */; };
+		04788E292650B698000EA8C7 /* NotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04788E272650B698000EA8C7 /* NotificationCell.xib */; };
+		0482126F263BBB7E00B3D3C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0482126E263BBB7E00B3D3C5 /* AppDelegate.swift */; };
+		04821271263BBB7E00B3D3C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04821270263BBB7E00B3D3C5 /* SceneDelegate.swift */; };
+		04821273263BBB7E00B3D3C5 /* MainMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04821272263BBB7E00B3D3C5 /* MainMenuController.swift */; };
+		04821276263BBB7E00B3D3C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04821274263BBB7E00B3D3C5 /* Main.storyboard */; };
+		04821278263BBB7F00B3D3C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04821277263BBB7F00B3D3C5 /* Assets.xcassets */; };
+		0482127B263BBB7F00B3D3C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04821279263BBB7F00B3D3C5 /* LaunchScreen.storyboard */; };
+		04821280263BBB7F00B3D3C5 /* LucidDreamer WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0482127F263BBB7F00B3D3C5 /* LucidDreamer WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		04821286263BBB7F00B3D3C5 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04821284263BBB7F00B3D3C5 /* Interface.storyboard */; };
+		04821288263BBB7F00B3D3C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04821287263BBB7F00B3D3C5 /* Assets.xcassets */; };
+		0482128F263BBB7F00B3D3C5 /* LucidDreamer WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0482128E263BBB7F00B3D3C5 /* LucidDreamer WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		04821294263BBB7F00B3D3C5 /* WatchMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04821293263BBB7F00B3D3C5 /* WatchMainController.swift */; };
+		04821296263BBB7F00B3D3C5 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04821295263BBB7F00B3D3C5 /* ExtensionDelegate.swift */; };
+		04821298263BBB7F00B3D3C5 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04821297263BBB7F00B3D3C5 /* NotificationController.swift */; };
+		0482129C263BBB7F00B3D3C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0482129B263BBB7F00B3D3C5 /* Assets.xcassets */; };
+		048212AF263BC1BC00B3D3C5 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 048212AE263BC1BC00B3D3C5 /* HealthKit.framework */; };
+		048212B4263DCE5D00B3D3C5 /* JournalListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048212B3263DCE5D00B3D3C5 /* JournalListController.swift */; };
+		048212CA263E27BB00B3D3C5 /* AudioJournalRecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048212C9263E27BB00B3D3C5 /* AudioJournalRecordController.swift */; };
+		0486479A264C1EC7001ECDE7 /* JournalListRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04864799264C1EC7001ECDE7 /* JournalListRowController.swift */; };
+		0486479C264C3587001ECDE7 /* AudioJournalPlayerMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0486479B264C3587001ECDE7 /* AudioJournalPlayerMainController.swift */; };
+		0486479E264CF863001ECDE7 /* TypingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0486479D264CF863001ECDE7 /* TypingTextView.swift */; };
+		048FDE0A2653708C00FD9993 /* WBTBNoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FDE092653708C00FD9993 /* WBTBNoteController.swift */; };
+		048FDE0C265373E200FD9993 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FDE0B265373E200FD9993 /* SettingsManager.swift */; };
+		048FDE0E26538FF400FD9993 /* SettingsMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048FDE0D26538FF400FD9993 /* SettingsMainController.swift */; };
+		04B004902641ECA400B292C0 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0048F2641ECA400B292C0 /* SettingsManager.swift */; };
+		04B004922642422500B292C0 /* WatchSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B004912642422500B292C0 /* WatchSession.swift */; };
+		04B004942644097A00B292C0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B004932644097A00B292C0 /* Extensions.swift */; };
+		04B0049626440E5800B292C0 /* TipsTricksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0049526440E5800B292C0 /* TipsTricksController.swift */; };
+		04B004982644149900B292C0 /* SnapshotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B004972644149900B292C0 /* SnapshotView.swift */; };
+		04B0049A264414A200B292C0 /* DarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B00499264414A200B292C0 /* DarkView.swift */; };
+		04B0049C2644341300B292C0 /* FirstLaunchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0049B2644341300B292C0 /* FirstLaunchManager.swift */; };
+		04B0049E26465BB400B292C0 /* TextFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0049D26465BB400B292C0 /* TextFile.swift */; };
+		04B004A026475C3A00B292C0 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0049F26475C3A00B292C0 /* SettingsTableViewController.swift */; };
+		04B004A22647898C00B292C0 /* HealthStoreRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B004A12647898C00B292C0 /* HealthStoreRecorder.swift */; };
+		04B004A4264789A400B292C0 /* MotionRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B004A3264789A400B292C0 /* MotionRecorder.swift */; };
+		04B004A62648CC1900B292C0 /* SleepAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B004A52648CC1900B292C0 /* SleepAnalysis.swift */; };
+		04B004A82649CAF200B292C0 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B004A72649CAF200B292C0 /* NotificationViewController.swift */; };
+		04B004AC2649D3DD00B292C0 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B004AB2649D3DD00B292C0 /* NotificationManager.swift */; };
+		04B004AE2649E02400B292C0 /* TextFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B004AD2649E02400B292C0 /* TextFile.swift */; };
+		04B004B22649F88800B292C0 /* AudioJournalListMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B004B12649F88800B292C0 /* AudioJournalListMainController.swift */; };
+		04B004B42649FA3A00B292C0 /* AudioJournalListLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B004B32649FA3A00B292C0 /* AudioJournalListLoader.swift */; };
+		04B004B6264B0E0600B292C0 /* WatchSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B004B5264B0E0600B292C0 /* WatchSession.swift */; };
+		04FBB9CE263E4FD300E22EFC /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FBB9CD263E4FD300E22EFC /* AudioRecorder.swift */; };
+		04FBB9D0263E5BF800E22EFC /* AudioRecorderObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FBB9CF263E5BF800E22EFC /* AudioRecorderObserver.swift */; };
+		04FBB9D2263E5FC400E22EFC /* AudioJournal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FBB9D1263E5FC400E22EFC /* AudioJournal.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04821281263BBB7F00B3D3C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04821263263BBB7E00B3D3C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0482127E263BBB7F00B3D3C5;
+			remoteInfo = "LucidDreamer WatchKit App";
+		};
+		04821290263BBB7F00B3D3C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04821263263BBB7E00B3D3C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0482128D263BBB7F00B3D3C5;
+			remoteInfo = "LucidDreamer WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		048212A4263BBB7F00B3D3C5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0482128F263BBB7F00B3D3C5 /* LucidDreamer WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		048212A8263BBB7F00B3D3C5 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				04821280263BBB7F00B3D3C5 /* LucidDreamer WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		04319BB5263F359B0007FADA /* AudioJournalsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioJournalsLoader.swift; sourceTree = "<group>"; };
+		04319BB7263F4D6B0007FADA /* TextJournal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextJournal.swift; sourceTree = "<group>"; };
+		04319BB9263F4D7F0007FADA /* TextJournalsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextJournalsLoader.swift; sourceTree = "<group>"; };
+		04319BBB263F60DC0007FADA /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
+		04319BBD263F65CE0007FADA /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		04319BBF263F66440007FADA /* AudioPlayerObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerObserver.swift; sourceTree = "<group>"; };
+		04319BC1263F856A0007FADA /* AudioJournalPlayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioJournalPlayController.swift; sourceTree = "<group>"; };
+		04319BC526408E6D0007FADA /* JournalsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalsLoader.swift; sourceTree = "<group>"; };
+		04319BC72640C9890007FADA /* TextJournalRecordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextJournalRecordController.swift; sourceTree = "<group>"; };
+		04319BC926410E1A0007FADA /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		04788E17264E6A95000EA8C7 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		04788E1A264E6C68000EA8C7 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		04788E1E264E72C0000EA8C7 /* UserNotificationObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationObject.swift; sourceTree = "<group>"; };
+		04788E20264F8D4A000EA8C7 /* NotificationEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationEditController.swift; sourceTree = "<group>"; };
+		04788E22264F9F3A000EA8C7 /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
+		04788E262650B698000EA8C7 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		04788E272650B698000EA8C7 /* NotificationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationCell.xib; sourceTree = "<group>"; };
+		0482126B263BBB7E00B3D3C5 /* LucidDreamer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LucidDreamer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0482126E263BBB7E00B3D3C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04821270263BBB7E00B3D3C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		04821272263BBB7E00B3D3C5 /* MainMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuController.swift; sourceTree = "<group>"; };
+		04821275263BBB7E00B3D3C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04821277263BBB7F00B3D3C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0482127A263BBB7F00B3D3C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0482127C263BBB7F00B3D3C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0482127F263BBB7F00B3D3C5 /* LucidDreamer WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LucidDreamer WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04821285263BBB7F00B3D3C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		04821287263BBB7F00B3D3C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04821289263BBB7F00B3D3C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0482128E263BBB7F00B3D3C5 /* LucidDreamer WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "LucidDreamer WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04821293263BBB7F00B3D3C5 /* WatchMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchMainController.swift; sourceTree = "<group>"; };
+		04821295263BBB7F00B3D3C5 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		04821297263BBB7F00B3D3C5 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		0482129B263BBB7F00B3D3C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0482129D263BBB7F00B3D3C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0482129E263BBB7F00B3D3C5 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		048212AC263BC1BB00B3D3C5 /* LucidDreamer WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "LucidDreamer WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		048212AE263BC1BC00B3D3C5 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.4.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		048212B3263DCE5D00B3D3C5 /* JournalListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalListController.swift; sourceTree = "<group>"; };
+		048212C9263E27BB00B3D3C5 /* AudioJournalRecordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioJournalRecordController.swift; sourceTree = "<group>"; };
+		04864799264C1EC7001ECDE7 /* JournalListRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalListRowController.swift; sourceTree = "<group>"; };
+		0486479B264C3587001ECDE7 /* AudioJournalPlayerMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioJournalPlayerMainController.swift; sourceTree = "<group>"; };
+		0486479D264CF863001ECDE7 /* TypingTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingTextView.swift; sourceTree = "<group>"; };
+		048FDE092653708C00FD9993 /* WBTBNoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBTBNoteController.swift; sourceTree = "<group>"; };
+		048FDE0B265373E200FD9993 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		048FDE0D26538FF400FD9993 /* SettingsMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMainController.swift; sourceTree = "<group>"; };
+		04B0048F2641ECA400B292C0 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		04B004912642422500B292C0 /* WatchSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSession.swift; sourceTree = "<group>"; };
+		04B004932644097A00B292C0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		04B0049526440E5800B292C0 /* TipsTricksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTricksController.swift; sourceTree = "<group>"; };
+		04B004972644149900B292C0 /* SnapshotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotView.swift; sourceTree = "<group>"; };
+		04B00499264414A200B292C0 /* DarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkView.swift; sourceTree = "<group>"; };
+		04B0049B2644341300B292C0 /* FirstLaunchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLaunchManager.swift; sourceTree = "<group>"; };
+		04B0049D26465BB400B292C0 /* TextFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFile.swift; sourceTree = "<group>"; };
+		04B0049F26475C3A00B292C0 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		04B004A12647898C00B292C0 /* HealthStoreRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStoreRecorder.swift; sourceTree = "<group>"; };
+		04B004A3264789A400B292C0 /* MotionRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionRecorder.swift; sourceTree = "<group>"; };
+		04B004A52648CC1900B292C0 /* SleepAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepAnalysis.swift; sourceTree = "<group>"; };
+		04B004A72649CAF200B292C0 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		04B004AB2649D3DD00B292C0 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		04B004AD2649E02400B292C0 /* TextFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFile.swift; sourceTree = "<group>"; };
+		04B004B12649F88800B292C0 /* AudioJournalListMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioJournalListMainController.swift; sourceTree = "<group>"; };
+		04B004B32649FA3A00B292C0 /* AudioJournalListLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioJournalListLoader.swift; sourceTree = "<group>"; };
+		04B004B5264B0E0600B292C0 /* WatchSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSession.swift; sourceTree = "<group>"; };
+		04FBB9CD263E4FD300E22EFC /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		04FBB9CF263E5BF800E22EFC /* AudioRecorderObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorderObserver.swift; sourceTree = "<group>"; };
+		04FBB9D1263E5FC400E22EFC /* AudioJournal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioJournal.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04821268263BBB7E00B3D3C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0482128B263BBB7F00B3D3C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				048212AF263BC1BC00B3D3C5 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04821262263BBB7E00B3D3C5 = {
+			isa = PBXGroup;
+			children = (
+				0482126D263BBB7E00B3D3C5 /* LucidDreamer */,
+				04821283263BBB7F00B3D3C5 /* LucidDreamer WatchKit App */,
+				04821292263BBB7F00B3D3C5 /* LucidDreamer WatchKit Extension */,
+				0482126C263BBB7E00B3D3C5 /* Products */,
+				048212AD263BC1BC00B3D3C5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0482126C263BBB7E00B3D3C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0482126B263BBB7E00B3D3C5 /* LucidDreamer.app */,
+				0482127F263BBB7F00B3D3C5 /* LucidDreamer WatchKit App.app */,
+				0482128E263BBB7F00B3D3C5 /* LucidDreamer WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0482126D263BBB7E00B3D3C5 /* LucidDreamer */ = {
+			isa = PBXGroup;
+			children = (
+				0482126E263BBB7E00B3D3C5 /* AppDelegate.swift */,
+				04821270263BBB7E00B3D3C5 /* SceneDelegate.swift */,
+				048212B2263DCE1900B3D3C5 /* Model */,
+				048212B1263DCE1400B3D3C5 /* View */,
+				048212B0263DCE0400B3D3C5 /* Controller */,
+				04821277263BBB7F00B3D3C5 /* Assets.xcassets */,
+				0482127C263BBB7F00B3D3C5 /* Info.plist */,
+				04788E19264E6C68000EA8C7 /* Model.xcdatamodeld */,
+			);
+			path = LucidDreamer;
+			sourceTree = "<group>";
+		};
+		04821283263BBB7F00B3D3C5 /* LucidDreamer WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				04821284263BBB7F00B3D3C5 /* Interface.storyboard */,
+				04821287263BBB7F00B3D3C5 /* Assets.xcassets */,
+				04821289263BBB7F00B3D3C5 /* Info.plist */,
+			);
+			path = "LucidDreamer WatchKit App";
+			sourceTree = "<group>";
+		};
+		04821292263BBB7F00B3D3C5 /* LucidDreamer WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				048212AC263BC1BB00B3D3C5 /* LucidDreamer WatchKit Extension.entitlements */,
+				04821293263BBB7F00B3D3C5 /* WatchMainController.swift */,
+				04821295263BBB7F00B3D3C5 /* ExtensionDelegate.swift */,
+				04821297263BBB7F00B3D3C5 /* NotificationController.swift */,
+				0482129B263BBB7F00B3D3C5 /* Assets.xcassets */,
+				0482129D263BBB7F00B3D3C5 /* Info.plist */,
+				0482129E263BBB7F00B3D3C5 /* PushNotificationPayload.apns */,
+				04B0049D26465BB400B292C0 /* TextFile.swift */,
+				04B004A12647898C00B292C0 /* HealthStoreRecorder.swift */,
+				04B004A3264789A400B292C0 /* MotionRecorder.swift */,
+				04B004A52648CC1900B292C0 /* SleepAnalysis.swift */,
+				04B004B12649F88800B292C0 /* AudioJournalListMainController.swift */,
+				04B004B32649FA3A00B292C0 /* AudioJournalListLoader.swift */,
+				04B004B5264B0E0600B292C0 /* WatchSession.swift */,
+				04864799264C1EC7001ECDE7 /* JournalListRowController.swift */,
+				0486479B264C3587001ECDE7 /* AudioJournalPlayerMainController.swift */,
+				048FDE092653708C00FD9993 /* WBTBNoteController.swift */,
+				048FDE0B265373E200FD9993 /* SettingsManager.swift */,
+				048FDE0D26538FF400FD9993 /* SettingsMainController.swift */,
+			);
+			path = "LucidDreamer WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		048212AD263BC1BC00B3D3C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				048212AE263BC1BC00B3D3C5 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		048212B0263DCE0400B3D3C5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				048212C8263E03BF00B3D3C5 /* TextJournals */,
+				048212C7263E03A700B3D3C5 /* AudioJournals */,
+				048212B3263DCE5D00B3D3C5 /* JournalListController.swift */,
+				04821272263BBB7E00B3D3C5 /* MainMenuController.swift */,
+				04319BC926410E1A0007FADA /* SettingsController.swift */,
+				04B004932644097A00B292C0 /* Extensions.swift */,
+				04B0049526440E5800B292C0 /* TipsTricksController.swift */,
+				04B0049F26475C3A00B292C0 /* SettingsTableViewController.swift */,
+				04B004A72649CAF200B292C0 /* NotificationViewController.swift */,
+				04788E20264F8D4A000EA8C7 /* NotificationEditController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		048212B1263DCE1400B3D3C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04821274263BBB7E00B3D3C5 /* Main.storyboard */,
+				04821279263BBB7F00B3D3C5 /* LaunchScreen.storyboard */,
+				04B004972644149900B292C0 /* SnapshotView.swift */,
+				04B00499264414A200B292C0 /* DarkView.swift */,
+				0486479D264CF863001ECDE7 /* TypingTextView.swift */,
+				04788E17264E6A95000EA8C7 /* NotificationTableViewCell.swift */,
+				04788E22264F9F3A000EA8C7 /* ToggleButton.swift */,
+				04788E262650B698000EA8C7 /* NotificationCell.swift */,
+				04788E272650B698000EA8C7 /* NotificationCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		048212B2263DCE1900B3D3C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04FBB9CD263E4FD300E22EFC /* AudioRecorder.swift */,
+				04FBB9CF263E5BF800E22EFC /* AudioRecorderObserver.swift */,
+				04FBB9D1263E5FC400E22EFC /* AudioJournal.swift */,
+				04319BB5263F359B0007FADA /* AudioJournalsLoader.swift */,
+				04319BB7263F4D6B0007FADA /* TextJournal.swift */,
+				04319BB9263F4D7F0007FADA /* TextJournalsLoader.swift */,
+				04319BBB263F60DC0007FADA /* Journal.swift */,
+				04319BBD263F65CE0007FADA /* AudioPlayer.swift */,
+				04319BBF263F66440007FADA /* AudioPlayerObserver.swift */,
+				04319BC526408E6D0007FADA /* JournalsLoader.swift */,
+				04B0048F2641ECA400B292C0 /* SettingsManager.swift */,
+				04B004912642422500B292C0 /* WatchSession.swift */,
+				04B0049B2644341300B292C0 /* FirstLaunchManager.swift */,
+				04B004AB2649D3DD00B292C0 /* NotificationManager.swift */,
+				04B004AD2649E02400B292C0 /* TextFile.swift */,
+				04788E1E264E72C0000EA8C7 /* UserNotificationObject.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		048212C7263E03A700B3D3C5 /* AudioJournals */ = {
+			isa = PBXGroup;
+			children = (
+				048212C9263E27BB00B3D3C5 /* AudioJournalRecordController.swift */,
+				04319BC1263F856A0007FADA /* AudioJournalPlayController.swift */,
+			);
+			path = AudioJournals;
+			sourceTree = "<group>";
+		};
+		048212C8263E03BF00B3D3C5 /* TextJournals */ = {
+			isa = PBXGroup;
+			children = (
+				04319BC72640C9890007FADA /* TextJournalRecordController.swift */,
+			);
+			path = TextJournals;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0482126A263BBB7E00B3D3C5 /* LucidDreamer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 048212A9263BBB7F00B3D3C5 /* Build configuration list for PBXNativeTarget "LucidDreamer" */;
+			buildPhases = (
+				04821267263BBB7E00B3D3C5 /* Sources */,
+				04821268263BBB7E00B3D3C5 /* Frameworks */,
+				04821269263BBB7E00B3D3C5 /* Resources */,
+				048212A8263BBB7F00B3D3C5 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04821282263BBB7F00B3D3C5 /* PBXTargetDependency */,
+			);
+			name = LucidDreamer;
+			productName = LucidDreamer;
+			productReference = 0482126B263BBB7E00B3D3C5 /* LucidDreamer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0482127E263BBB7F00B3D3C5 /* LucidDreamer WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 048212A5263BBB7F00B3D3C5 /* Build configuration list for PBXNativeTarget "LucidDreamer WatchKit App" */;
+			buildPhases = (
+				0482127D263BBB7F00B3D3C5 /* Resources */,
+				048212A4263BBB7F00B3D3C5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04821291263BBB7F00B3D3C5 /* PBXTargetDependency */,
+			);
+			name = "LucidDreamer WatchKit App";
+			productName = "LucidDreamer WatchKit App";
+			productReference = 0482127F263BBB7F00B3D3C5 /* LucidDreamer WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		0482128D263BBB7F00B3D3C5 /* LucidDreamer WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 048212A1263BBB7F00B3D3C5 /* Build configuration list for PBXNativeTarget "LucidDreamer WatchKit Extension" */;
+			buildPhases = (
+				0482128A263BBB7F00B3D3C5 /* Sources */,
+				0482128B263BBB7F00B3D3C5 /* Frameworks */,
+				0482128C263BBB7F00B3D3C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LucidDreamer WatchKit Extension";
+			productName = "LucidDreamer WatchKit Extension";
+			productReference = 0482128E263BBB7F00B3D3C5 /* LucidDreamer WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04821263263BBB7E00B3D3C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					0482126A263BBB7E00B3D3C5 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					0482127E263BBB7F00B3D3C5 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					0482128D263BBB7F00B3D3C5 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 04821266263BBB7E00B3D3C5 /* Build configuration list for PBXProject "LucidDreamer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04821262263BBB7E00B3D3C5;
+			productRefGroup = 0482126C263BBB7E00B3D3C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0482126A263BBB7E00B3D3C5 /* LucidDreamer */,
+				0482127E263BBB7F00B3D3C5 /* LucidDreamer WatchKit App */,
+				0482128D263BBB7F00B3D3C5 /* LucidDreamer WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04821269263BBB7E00B3D3C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04788E292650B698000EA8C7 /* NotificationCell.xib in Resources */,
+				0482127B263BBB7F00B3D3C5 /* LaunchScreen.storyboard in Resources */,
+				04821278263BBB7F00B3D3C5 /* Assets.xcassets in Resources */,
+				04821276263BBB7E00B3D3C5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0482127D263BBB7F00B3D3C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04821288263BBB7F00B3D3C5 /* Assets.xcassets in Resources */,
+				04821286263BBB7F00B3D3C5 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0482128C263BBB7F00B3D3C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0482129C263BBB7F00B3D3C5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04821267263BBB7E00B3D3C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B004942644097A00B292C0 /* Extensions.swift in Sources */,
+				04FBB9D2263E5FC400E22EFC /* AudioJournal.swift in Sources */,
+				04788E1F264E72C0000EA8C7 /* UserNotificationObject.swift in Sources */,
+				04B004922642422500B292C0 /* WatchSession.swift in Sources */,
+				04319BCA26410E1A0007FADA /* SettingsController.swift in Sources */,
+				04788E18264E6A95000EA8C7 /* NotificationTableViewCell.swift in Sources */,
+				04319BBA263F4D7F0007FADA /* TextJournalsLoader.swift in Sources */,
+				04B0049626440E5800B292C0 /* TipsTricksController.swift in Sources */,
+				04B004AE2649E02400B292C0 /* TextFile.swift in Sources */,
+				04319BC626408E6D0007FADA /* JournalsLoader.swift in Sources */,
+				04319BC0263F66440007FADA /* AudioPlayerObserver.swift in Sources */,
+				04821273263BBB7E00B3D3C5 /* MainMenuController.swift in Sources */,
+				048212B4263DCE5D00B3D3C5 /* JournalListController.swift in Sources */,
+				048212CA263E27BB00B3D3C5 /* AudioJournalRecordController.swift in Sources */,
+				04FBB9CE263E4FD300E22EFC /* AudioRecorder.swift in Sources */,
+				04319BC82640C9890007FADA /* TextJournalRecordController.swift in Sources */,
+				04319BBC263F60DC0007FADA /* Journal.swift in Sources */,
+				04B004A026475C3A00B292C0 /* SettingsTableViewController.swift in Sources */,
+				04B0049A264414A200B292C0 /* DarkView.swift in Sources */,
+				04319BC2263F856A0007FADA /* AudioJournalPlayController.swift in Sources */,
+				04319BBE263F65CE0007FADA /* AudioPlayer.swift in Sources */,
+				04788E23264F9F3A000EA8C7 /* ToggleButton.swift in Sources */,
+				04788E1B264E6C68000EA8C7 /* Model.xcdatamodeld in Sources */,
+				0482126F263BBB7E00B3D3C5 /* AppDelegate.swift in Sources */,
+				04319BB8263F4D6B0007FADA /* TextJournal.swift in Sources */,
+				04FBB9D0263E5BF800E22EFC /* AudioRecorderObserver.swift in Sources */,
+				04319BB6263F359B0007FADA /* AudioJournalsLoader.swift in Sources */,
+				04788E21264F8D4A000EA8C7 /* NotificationEditController.swift in Sources */,
+				0486479E264CF863001ECDE7 /* TypingTextView.swift in Sources */,
+				04B004902641ECA400B292C0 /* SettingsManager.swift in Sources */,
+				04B004A82649CAF200B292C0 /* NotificationViewController.swift in Sources */,
+				04821271263BBB7E00B3D3C5 /* SceneDelegate.swift in Sources */,
+				04788E282650B698000EA8C7 /* NotificationCell.swift in Sources */,
+				04B0049C2644341300B292C0 /* FirstLaunchManager.swift in Sources */,
+				04B004AC2649D3DD00B292C0 /* NotificationManager.swift in Sources */,
+				04B004982644149900B292C0 /* SnapshotView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0482128A263BBB7F00B3D3C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B004B6264B0E0600B292C0 /* WatchSession.swift in Sources */,
+				04B004B42649FA3A00B292C0 /* AudioJournalListLoader.swift in Sources */,
+				04821298263BBB7F00B3D3C5 /* NotificationController.swift in Sources */,
+				04B004B22649F88800B292C0 /* AudioJournalListMainController.swift in Sources */,
+				0486479C264C3587001ECDE7 /* AudioJournalPlayerMainController.swift in Sources */,
+				04B004A22647898C00B292C0 /* HealthStoreRecorder.swift in Sources */,
+				04B004A62648CC1900B292C0 /* SleepAnalysis.swift in Sources */,
+				0486479A264C1EC7001ECDE7 /* JournalListRowController.swift in Sources */,
+				048FDE0E26538FF400FD9993 /* SettingsMainController.swift in Sources */,
+				04821296263BBB7F00B3D3C5 /* ExtensionDelegate.swift in Sources */,
+				048FDE0A2653708C00FD9993 /* WBTBNoteController.swift in Sources */,
+				048FDE0C265373E200FD9993 /* SettingsManager.swift in Sources */,
+				04B0049E26465BB400B292C0 /* TextFile.swift in Sources */,
+				04821294263BBB7F00B3D3C5 /* WatchMainController.swift in Sources */,
+				04B004A4264789A400B292C0 /* MotionRecorder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04821282263BBB7F00B3D3C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0482127E263BBB7F00B3D3C5 /* LucidDreamer WatchKit App */;
+			targetProxy = 04821281263BBB7F00B3D3C5 /* PBXContainerItemProxy */;
+		};
+		04821291263BBB7F00B3D3C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0482128D263BBB7F00B3D3C5 /* LucidDreamer WatchKit Extension */;
+			targetProxy = 04821290263BBB7F00B3D3C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04821274263BBB7E00B3D3C5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04821275263BBB7E00B3D3C5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04821279263BBB7F00B3D3C5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0482127A263BBB7F00B3D3C5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		04821284263BBB7F00B3D3C5 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04821285263BBB7F00B3D3C5 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0482129F263BBB7F00B3D3C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		048212A0263BBB7F00B3D3C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		048212A2263BBB7F00B3D3C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = "";
+				CODE_SIGN_ENTITLEMENTS = "LucidDreamer WatchKit Extension/LucidDreamer WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ULWAF75K22;
+				INFOPLIST_FILE = "LucidDreamer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Steven.LucidDreamer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		048212A3263BBB7F00B3D3C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = "";
+				CODE_SIGN_ENTITLEMENTS = "LucidDreamer WatchKit Extension/LucidDreamer WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ULWAF75K22;
+				INFOPLIST_FILE = "LucidDreamer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Steven.LucidDreamer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		048212A6263BBB7F00B3D3C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ULWAF75K22;
+				IBSC_MODULE = LucidDreamer_WatchKit_Extension;
+				INFOPLIST_FILE = "LucidDreamer WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Steven.LucidDreamer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		048212A7263BBB7F00B3D3C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ULWAF75K22;
+				IBSC_MODULE = LucidDreamer_WatchKit_Extension;
+				INFOPLIST_FILE = "LucidDreamer WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Steven.LucidDreamer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		048212AA263BBB7F00B3D3C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ULWAF75K22;
+				INFOPLIST_FILE = LucidDreamer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Steven.LucidDreamer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		048212AB263BBB7F00B3D3C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ULWAF75K22;
+				INFOPLIST_FILE = LucidDreamer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Steven.LucidDreamer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04821266263BBB7E00B3D3C5 /* Build configuration list for PBXProject "LucidDreamer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0482129F263BBB7F00B3D3C5 /* Debug */,
+				048212A0263BBB7F00B3D3C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		048212A1263BBB7F00B3D3C5 /* Build configuration list for PBXNativeTarget "LucidDreamer WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				048212A2263BBB7F00B3D3C5 /* Debug */,
+				048212A3263BBB7F00B3D3C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		048212A5263BBB7F00B3D3C5 /* Build configuration list for PBXNativeTarget "LucidDreamer WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				048212A6263BBB7F00B3D3C5 /* Debug */,
+				048212A7263BBB7F00B3D3C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		048212A9263BBB7F00B3D3C5 /* Build configuration list for PBXNativeTarget "LucidDreamer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				048212AA263BBB7F00B3D3C5 /* Debug */,
+				048212AB263BBB7F00B3D3C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		04788E19264E6C68000EA8C7 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04788E1A264E6C68000EA8C7 /* Model.xcdatamodel */,
+			);
+			currentVersion = 04788E1A264E6C68000EA8C7 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 04821263263BBB7E00B3D3C5 /* Project object */;
+}
